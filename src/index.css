@@ -108,3 +108,16 @@ body {
   color: var(--color-brand-dark);
   -webkit-font-smoothing: antialiased;
 }
+
+img.xl\:w-32.w-22.h-18.xl\:h-26.scale-150.overflow-hidden {
+    width: 40% !important;
+    height: auto !important;
+}
+
+@media (min-width: 80rem) {
+    .xl\:w-32 {
+        /* width: calc(var(--spacing) * 32); */
+        width: 25% !important;
+        height: auto;
+    }
+}
