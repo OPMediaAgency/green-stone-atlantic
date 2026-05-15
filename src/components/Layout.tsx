@@ -55,7 +55,7 @@ export const Layout: React.FC = () => {
       <Footer />
 
       {/* Floating Actions */}
-      <div className="fixed bottom-12 right-8 z-[100] flex flex-col gap-4">
+      <div className="fixed bottom-23 md:bottom-12 right-8 z-[100] flex flex-col gap-4">
         {/* Scroll Top */}
         <AnimatePresence>
           {showScrollTop && (
