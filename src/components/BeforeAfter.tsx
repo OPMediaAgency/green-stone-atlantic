@@ -25,11 +25,11 @@ const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({ project }) => {
         onTouchMove={handleMove}
       >
         {/* After Image */}
-        <img 
+        <video 
           src={project.afterImage} 
-          alt="After Landscaping"
+          loop autoPlay muted playsInline
           className="absolute inset-0 w-full h-full object-cover"
-          referrerPolicy="no-referrer"
+          
         />
         
         {/* Before Image (Clipped) */}
@@ -37,12 +37,11 @@ const BeforeAfterCard: React.FC<BeforeAfterCardProps> = ({ project }) => {
           className="absolute inset-0 w-full h-full overflow-hidden"
           style={{ clipPath: `inset(0 ${100 - sliderPos}% 0 0)` }}
         >
-          <img 
+          <video
             src={project.beforeImage} 
-            alt="Before Landscaping"
-            className="absolute inset-0 w-full h-full object-cover"
-            referrerPolicy="no-referrer"
-          />
+            loop autoPlay muted playsInline
+             className="absolute inset-0 w-full h-full object-cover"
+           />
           <div className="absolute top-6 left-6 bg-brand-dark/60 text-white px-4 py-1 rounded-full text-xs font-bold uppercase tracking-widest backdrop-blur-md">
             Before
           </div>
