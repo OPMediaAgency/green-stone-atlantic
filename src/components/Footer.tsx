@@ -21,8 +21,8 @@ export const Footer: React.FC = () => {
               The premier choice for luxury landscaping and professional hardscaping in the Halifax Regional Municipality.
             </p>
             <div className="flex gap-4">
-              {[Instagram, Facebook].map((Icon, i) => (
-                <a key={i} href="#" className="w-10 h-10 rounded-full glass border border-white/10 flex items-center justify-center hover:bg-brand-accent transition-all">
+              {[Instagram].map((Icon, i) => (
+                <a key={i} href="https://www.instagram.com/greenstonens?igsh=MWVsYXdtanpqcWhlMg%3D%3D" className="w-10 h-10 rounded-full glass border border-white/10 flex items-center justify-center hover:bg-brand-accent transition-all">
                   <Icon size={20} />
                 </a>
               ))}

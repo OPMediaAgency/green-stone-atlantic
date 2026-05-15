@@ -232,19 +232,19 @@ export const TESTIMONIALS: Testimonial[] = [
 export const PROJECTS: Project[] = [
   {
     id: 'p1',
-    title: 'Coastal Patio Extension',
+    title: 'House Makeover',
     category: 'Hardscaping',
     beforeImage: '/vdo1.mp4',
     afterImage: '/vdo2.mp4',
-    description: 'A complete backyard overhaul featuring custom pavers and integrated lighting.',
+    description: 'Transforming Outdoor Spaces Into Beautiful Living Areas',
   },
   {
     id: 'p2',
-    title: 'Tiered Garden Wall',
+    title: 'Sod Installation',
     category: 'Hardscaping',
     beforeImage: '/vdo3.mp4',
     afterImage: '/vdo4.mp4',
-    description: 'Solving severe slope issues with elegant stone tiers and perennial plantings.',
+    description: 'Fast, Reliable Sod Installation for a Beautiful Law',
   },
 ];
 
