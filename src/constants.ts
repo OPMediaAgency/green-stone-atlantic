@@ -244,7 +244,7 @@ export const PROJECTS: Project[] = [
     category: 'Hardscaping',
     beforeImage: '/vdo3.mp4',
     afterImage: '/vdo4.mp4',
-    description: 'Fast, Reliable Sod Installation for a Beautiful Law',
+    description: 'Fast, Reliable Sod Installation for a Beautiful Lawn',
   },
 ];
 
