@@ -50,7 +50,7 @@ export const QuoteForm: React.FC<{ compact?: boolean }> = ({ compact }) => {
 
   const onSubmit = async (data: QuoteFormData) => {
     try {
-     const response = await fetch('https://backend-2-pi-orcin.vercel.app/api/quote', {
+     const response = await fetch('https://backend-2-1-t7ek.onrender.com/api/quote', {
       method: 'POST',
       headers: {
         'Content-Type': 'application/json',
