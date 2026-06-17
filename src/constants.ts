@@ -22,7 +22,7 @@ export const SERVICESC: Services[] = [
     title: "Luxury Exterior Treatment",
     shortDescription: "More than a quick wash. This is an extensive decontamination treatment designed to safely lift grit and restore brilliance.",
     description: "Experience premium, scratch-free multi-stage exterior decontamination. We safely lift embedded road salt, surface road film, and stubborn organic soot using dense chemical snow foams, dual-bucket methods, and touchless blow dryers to shield your clear coat.",
-    image: "https://images.unsplash.com/photo-1520340356584-f9917d1ecc6f?auto=format&fit=crop&q=80&w=1200",
+    image: "/images/shine-shop.webp",
     features: [
       "pH-Neutral Premium Snow Foam Pre-Soak",
       "Two-Bucket Grid Guard Hand Scrub Safety",
@@ -153,7 +153,7 @@ export const SERVICESC: Services[] = [
     title: "Alloy Shield & Windshield Armor",
     shortDescription: "Surgical alloy brake dust defense and hydrophobic windshield glass sealing.",
     description: "Extend protection to high-wear contact zones. Wheels face abusive heat and brake dust, while glass requires maximum vision clarity. We seal wheels under premium temp-graded coatings and windshields with water-shedding sealants.",
-    image: "https://images.unsplash.com/photo-1611245801311-6677f981ddb5?auto=format&fit=crop&q=80&w=1200",
+    image: "/images/amor.webp",
     features: [
       "Acid-free caliper & barrel iron release spray",
       "Wheel-face hand polishing correction",
