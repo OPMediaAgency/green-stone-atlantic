@@ -12,10 +12,12 @@ const __dirname = path.dirname(__filename);
 
 async function startServer() {
   const app = express();
-  const PORT = 3000;
+  const PORT = Number(process.env.PORT) || 3000;
 
   app.use(express.json());
-   // API Route for Quote Submissions
+  app.use(express.urlencoded({ extended: true }));
+
+  // API Route for Quote Submissions
   app.post("/api/quote", async (req, res) => {
     const data = req.body;
     const gmailUser = process.env.GMAIL_USER;
@@ -92,9 +94,26 @@ from: {
     });
   }
 
-  app.listen(PORT, "0.0.0.0", () => {
-    console.log(`Server running on http://localhost:${PORT}`);
-  });
+  const listenWithFallback = (port: number, attempts = 0) => {
+    const server = app.listen(port, "0.0.0.0", () => {
+      console.log(`Server running on http://localhost:${port}`);
+    });
+
+    server.on("error", (error: NodeJS.ErrnoException) => {
+      if (error.code === "EADDRINUSE" && attempts < 5) {
+        const nextPort = port + 1;
+        console.warn(`Port ${port} is busy. Trying ${nextPort} instead...`);
+        server.close();
+        listenWithFallback(nextPort, attempts + 1);
+        return;
+      }
+
+      console.error("Server failed to start:", error);
+      process.exit(1);
+    });
+  };
+
+  listenWithFallback(PORT);
 }
 
 startServer();

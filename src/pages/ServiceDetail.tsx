@@ -2,13 +2,13 @@ import React from 'react';
 import { useParams, Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { CheckCircle2, ShieldCheck, Clock, MapPin, Star, ChevronRight, Calculator, Plus } from 'lucide-react';
-import { SERVICES, TESTIMONIALS } from '../constants';
+import { SERVICES, SERVICESC, TESTIMONIALS } from '../constants';
 import { QuoteForm } from '../components/QuoteForm';
 import { SEO } from '../components/SEO';
 
 export const ServiceDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();
-  const service = SERVICES.find((s) => s.slug === slug);
+  const service = SERVICES.find((s) => s.slug === slug) || SERVICESC.find((s) => s.slug === slug);
 
   if (!service) {
     return (

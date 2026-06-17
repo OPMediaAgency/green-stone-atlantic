@@ -1,4 +1,4 @@
-import { Service, Testimonial, Project } from './types';
+import { Service, Services, Testimonial, Project, Projectc } from './types';
 
 export const BUSINESS_INFO = {
   name: 'Green Stone Atlantic',
@@ -7,6 +7,213 @@ export const BUSINESS_INFO = {
   email: 'greenstonens1@gmail.com',
   address: 'Halifax, NS, Canada',
 };
+ 
+
+ 
+
+ 
+
+ 
+
+export const SERVICESC: Services[] = [
+  {
+    id: "exterior-treatment",
+    slug: "exterior-treatment",
+    title: "Luxury Exterior Treatment",
+    shortDescription: "More than a quick wash. This is an extensive decontamination treatment designed to safely lift grit and restore brilliance.",
+    description: "Experience premium, scratch-free multi-stage exterior decontamination. We safely lift embedded road salt, surface road film, and stubborn organic soot using dense chemical snow foams, dual-bucket methods, and touchless blow dryers to shield your clear coat.",
+    image: "https://images.unsplash.com/photo-1520340356584-f9917d1ecc6f?auto=format&fit=crop&q=80&w=1200",
+    features: [
+      "pH-Neutral Premium Snow Foam Pre-Soak",
+      "Two-Bucket Grid Guard Hand Scrub Safety",
+      "Decontamination of Wheel Barrels & Brake Calipers",
+      "Deep Tire Dressing with Non-Fling Wet Gloss",
+      "High-Velocity Filtered Air Blow Dry Finish",
+    ],
+    benefits: [
+      "Reclaims deep original showroom depth and gloss",
+      "Prevents micro-scratches, wash swirls, and halo marks",
+      "Safely removes aggressive and corrosive industrial fallouts",
+      "Extends the life of underlying wax or ceramic coatings",
+    ],
+    process: [
+      { step: "Inspection", description: "Evaluating paint finishes, depth levels, and surface grit density." },
+      { step: "Snow Foam", description: "Lifting stubborn organic matter without paint friction." },
+      { step: "Decontamination", description: "Removing bonded iron particles from brake dust and environment." },
+      { step: "Protection", description: "Sealing the coat under a micro-layer glass sealant." },
+    ],
+    faqs: [
+      { question: "How often should my vehicle get an exterior treatment?", answer: "We recommend this comprehensive cleaning every 2 to 4 weeks to maintain paint integrity in coastal climates." },
+      { question: "Do you clean the door jambs?", answer: "Yes, all door sill channels and trunk drain paths are wiped clean and protected." },
+      { question: "Is your washing method safe for matte wraps?", answer: "Yes, our pH-balanced foaming agents and wash techniques are fully approved for satin or matte finishes." },
+      { question: "Do you carry your own water source for this service?", answer: "Yes, our mobile rigs are completely self-contained. We bring demineralized spot-free pure water and silent generator power." },
+    ],
+  },
+  {
+    id: "interior-restoration",
+    slug: "interior-restoration",
+    title: "Aseptic Cabin Restoration",
+    shortDescription: "Surgical-grade cabin sanitization and deep restorative conditioning for fine interiors.",
+    description: "Complete cabin restoration utilizing high-temperature dry vapor steam. We sanitize deep HVAC ducts, revive dry leather upholstery, and extract heavy carpet stains without harsh chemical perfumes.",
+    image: "https://images.unsplash.com/photo-1607860108855-64acf2078ed9?auto=format&fit=crop&q=80&w=1200",
+    features: [
+      "Deep HEPA extraction of carpets & headliner",
+      "Dry vapor steam cleaning of vents & consoles",
+      "pH-safe leather cleansing & conditioning",
+      "Enzymatic bacterial stain breakdown",
+      "Optical glass clarification",
+    ],
+    benefits: [
+      "Neutralizes 99.9% of cabin allergens and bacteria",
+      "Erases odor-causing mold spores and pet dander",
+      "Restores leathers to a supple, non-greasy factory feel",
+      "Enhances long-term material preservation",
+    ],
+    process: [
+      { step: "Purge", description: "Extracting loose dust and grit from deep tracks and fibers." },
+      { step: "Steam Disinfection", description: "Deploying dry steam at 320°F to unlock stubborn grease and kill microbes." },
+      { step: "Conditioning", description: "Feeding and shielding premium leather hide undercoating." },
+      { step: "Clarification", description: "Polishing screens, instrument clusters, and glass surfaces." },
+    ],
+    faqs: [
+      { question: "Will my seats be wet after the extraction?", answer: "We use professional-grade low-moisture dry steam extractors so seating fabrics are dry in under 45 minutes." },
+      { question: "Are your products safe for people with chemical sensitivities?", answer: "Yes. We avoid strong artificial scents and rely on organic plant-derived cleaner bases and pure steam." },
+      { question: "Can you get rid of heavy tobacco odors?", answer: "Yes, our intensive steaming and molecular odor-neutralizing procedures permanently bind and drop deep odor components." },
+      { question: "Will steam damage delicate dashboard electronics?", answer: "Never. Our specialists are highly trained to control moisture and distance, working carefully around delicate LCD screen seals and gauges." },
+    ],
+  },
+  {
+    id: "paint-correction",
+    slug: "paint-correction",
+    title: "Multi-Stage Paint Correction",
+    shortDescription: "Artisanal compound leveling restoring absolute deep reflection and light saturation.",
+    description: "Banish up to 90% of spiderweb swirls, buffer trails, and chemical rain marks. We check your clear coat with digital depth indicators before deploying calibrated compound steps to restore absolute optical clarity.",
+    image: "https://images.unsplash.com/photo-1563720223185-11003d516935?auto=format&fit=crop&q=80&w=1200",
+    features: [
+      "Digital clear-coat depth profiling",
+      "Dual-action machine micro-compounding",
+      "Fine-cutting paint leveling polish",
+      "Jeweler-grade finish refinement",
+      "IPA grease-strip prep wipe",
+    ],
+    benefits: [
+      "Creates a mirror-like fluid glossy paint surface",
+      "Removes stubborn scratches and clear-coat fogging",
+      "Increases asset marketplace valuation significantly",
+      "Establishes a perfect base for nano-coatings",
+    ],
+    process: [
+      { step: "Depth Check", description: "Taking non-destructive ultrasonic measurements of clear coat thicknesses." },
+      { step: "Correction Cut", description: "Removing micro-scratches using precise compound grits." },
+      { step: "Refining Polish", description: "Bringing out maximum light reflectivity and high-gloss depth." },
+      { step: "Panel Cleansing", description: "Stripping polishing lubricants for bare clear-coat inspections." },
+    ],
+    faqs: [
+      { question: "How much clear coat is removed?", answer: "We remove absolute micro-layers (typically 2-4 microns), leaving over 95% of your clear coat fully intact." },
+      { question: "Does this process scratch or ruin my paint clear coat?", answer: "No. We analyze paint with digital depth readers to map safe work zones, ensuring sufficient coating remains fully protected." },
+      { question: "Can you correct deep scratches that go down to the bare metal?", answer: "Scratches that catch your fingernail require custom touch-up painting, but we can round off the edges to make them significantly less visible." },
+      { question: "Why is paint correction necessary before ceramic applications?", answer: "Ceramic layers seal paint under a glass shell. Any swirl marks, oxidation, or haziness not corrected will be locked underneath permanently." },
+    ],
+  },
+  {
+    id: "ceramic-protection",
+    slug: "ceramic-protection",
+    title: "9H Nano Ceramic Glass Armor",
+    shortDescription: "Ultra-durable, hydrophobic liquid glass shield protecting your vehicle up to 3 years.",
+    description: "Anchor ultimate scratch resistance in place. Our premium liquid SiO2 quartz glass formula chemically coordinates and cross-links with your clear coat to protect against sun etching, calcium spots, and road salts.",
+    image: "https://images.unsplash.com/photo-1616788494707-ec28f08d05a1?auto=format&fit=crop&q=80&w=1200",
+    features: [
+      "Multi-year covalent glass-coat bonding",
+      "Astonishing water sheeting and self-cleaning attributes",
+      "Resistance to bird acid and harsh road chemicals",
+      "Bespoke infrared lamp heat curing",
+    ],
+    benefits: [
+      "Dirt washes off with a simple high-pressure stream",
+      "Locks in deep permanent mirror gloss that never washes off",
+      "Highly shields original paint from yellowing solar radiation",
+      "Saves hours of detailing labor in routine washes",
+    ],
+    process: [
+      { step: "Pre-Preparation", description: "Decontaminating and clarifying paint texture." },
+      { step: "Covalent Buffing", description: "Surgical application of liquid SiO2 formulas in horizontal templates." },
+      { step: "Flash Leveling", description: "Allowing the coat to crystallize support and wiping high-spots level." },
+      { step: "Infrared Bake", description: "Subjecting panels to short-wave infrared heat to seal the crystal grid." },
+    ],
+    faqs: [
+      { question: "How do I care for my vehicle after a ceramic coating?", answer: "Perform simple multi-bucket hand washes. Avoid automatic drive-through car washes with spinning abrasive brushes." },
+      { question: "Does a ceramic coat protect from rock chips?", answer: "No, ceramic armor does not defend against high-velocity highway debris. Only Paint Protection Film (PPF) does." },
+      { question: "How long must the ceramic coat stay dry after installation?", answer: "We recommend letting the glass shield seal for at least 24 hours under our temperature control." },
+      { question: "How long is the active lifespan of the protection?", answer: "Our signature double-layer coat provides continuous paint protection, extreme slickness, and water sheeting for up to 3 years with proper care." },
+    ],
+  },
+  {
+    id: "alloy-shield",
+    slug: "alloy-shield",
+    title: "Alloy Shield & Windshield Armor",
+    shortDescription: "Surgical alloy brake dust defense and hydrophobic windshield glass sealing.",
+    description: "Extend protection to high-wear contact zones. Wheels face abusive heat and brake dust, while glass requires maximum vision clarity. We seal wheels under premium temp-graded coatings and windshields with water-shedding sealants.",
+    image: "https://images.unsplash.com/photo-1611245801311-6677f981ddb5?auto=format&fit=crop&q=80&w=1200",
+    features: [
+      "Acid-free caliper & barrel iron release spray",
+      "Wheel-face hand polishing correction",
+      "Extreme-temperature alloy ceramic sealing",
+      "Claying and clarifying of windshield panels",
+      "Hydrophobic rainwater shield coating",
+    ],
+    benefits: [
+      "Prevents metallic brake dust from pit-corroding alloy surfaces",
+      "Dramatically improves heavy storm driver visibility",
+      "Drastically decreases wiper blade drag and chatter noise",
+      "Allows wheels to be cleaned with basic hose output",
+    ],
+    process: [
+      { step: "Release Wash", description: "Removing thick sintered carbon brake dust from caliper gaps." },
+      { step: "Glass Prep", description: "Polishing windshield glass to extract trapped mineral scale." },
+      { step: "Nano Coating", description: "Applying a specialized temperature-graded seal onto rim profiles." },
+      { step: "Buffing Raincoat", description: "Polishing an ultra-slick rain repelling coating over glass coordinates." },
+    ],
+    faqs: [
+      { question: "How long does the glass repellent benefit last?", answer: "Our professional windshield treatment maintains active water-sheeting for 6 to 9 months." },
+      { question: "Will this prevent brake dust build-up entirely?", answer: "While dust will still settle on wheels, it will not chemically bind, letting you wash it off with standard water pressure." },
+      { question: "Are these coatings safe for powder-coated rims?", answer: "Yes, our formula is neutral and safe on powder-coat, chrome, satin, and machined finishes." },
+      { question: "Does the windshield repelling layer create wiper squeak?", answer: "No, as long as your blades are clean and we have polished the glass to remove old grit patterns, the wipers will slip silently." },
+    ],
+  },
+  {
+    id: "fleet-concierge",
+    slug: "fleet-concierge",
+    title: "Corporate Fleet Concierge",
+    shortDescription: "Coordinated luxury fleet maintenance programs keeping your brand immaculate.",
+    description: "Streamlined mobility agreements for elite business operations, local high-end dealerships, and real estate agencies. We dispatch fully self-contained treatment vans to maintain your assets directly on your campus.",
+    image: "https://images.unsplash.com/photo-1507136566006-cfc505b114fc?auto=format&fit=crop&q=80&w=1200",
+    features: [
+      "Priority booking scheduling year-round",
+      "Self-powered on-site dynamic mobile units",
+      "Comprehensive multi-vehicle fleet pricing advantages",
+      "Unified single monthly commercial billing portal",
+      "Before/after photo and status validation",
+    ],
+    benefits: [
+      "Maintains excellent first-impression corporate image",
+      "Preserves the investment of executive transport inventory",
+      "Saves employees valuable trip and scheduling times",
+      "No water run-off concerns due to dry-mist technology",
+    ],
+    process: [
+      { step: "Set Agreement", description: "Formulating convenient cycles, vehicle counts, and specific package limits." },
+      { step: "On-Site Call", description: "Our custom rig arrives equipped with silent generator power and purified water reserves." },
+      { step: "Unified Clean", description: "Simultaneously cleaning and dressing all company vehicles." },
+      { step: "Digital Report", description: "We send digital work reports and safe key returns instantly." },
+    ],
+    faqs: [
+      { question: "Is there a minimum count of cars to book a route?", answer: "We require a minimum fleet density of 3 vehicles per on-site visit to unlock custom fleet pricing structures." },
+      { question: "Can you work inside local parking parkades?", answer: "Yes, our dry mist vapor tools operate safely in indoor parking bays with zero chemical runoff." },
+      { question: "Do you offer Net payment terms?", answer: "Yes, we accommodate Net-15 or Net-30 intervals for established corporate accounts." },
+      { question: "How do we handle schedule adjustments during severe weather?", answer: "Our fleet manager matches real-time weather forecasts to keep you informed and reschedule seamlessly with minimal disruption." },
+    ],
+  },
+];
 
 export const SERVICES: Service[] = [
   {
@@ -203,31 +410,59 @@ export const SERVICES: Service[] = [
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
+  
+   {
+      id: "test-1",
+      name: "Matthew Vance",
+      role: "Asset Collector",
+      rating: 5,
+      content: "Greenstone Atlantic exceeded every high bar. They detailed my Ferrari 488 paint to a literal mirror glass finish, removing 100% of the minor transport swirls. The mobile unit arrived on-time, fully self-powered, clean, and extremely professional.",
+      location: "Ferrari 488 Spider",
+    },
+    {
+      id: "test-2",
+      name: "Elizabeth Sterling",
+      role: "Marketing Director",
+      rating: 5,
+      content: "The interior hot vapor steam treatment completely restored my white leather SUV seats after a severe dark coffee spill active stain. It feels, smells, and touches like a brand-new factory-assembled car. Truly marvelous mobile convenience.",
+       location: "Mercedes-Benz GLE 53 Coupe",
+    },
+    {
+      id: "test-3",
+      name: "David Kincaid",
+      role: "Managing Partner",
+      rating: 5,
+      content: "Flawless corporate service. They detailed our executive fleet of four black SUVs right on-site at our corporate headquarters. Highly synchronized logistics, completely digital invoicing, and stellar finish on every single vehicle.",
+       location: "Fleet Executive Escalades",
+    },
+    {
+      id: "test-4",
+      name: "William Harrison",
+      role: "Architectural Principal",
+      rating: 5,
+      content: "Simply extraordinary. My vintage DB11 looks deeper and shinier than the raw showroom pickup day. The level of craft and care around delicate leather piping and aluminum vents is unmatched. Greenstone is now my permanent car detailer.",
+       location: "Aston Martin DB11",
+    },
+];
+export const PROJECTSC: Projectc[] = [
   {
-    id: '1',
-    name: 'Sarah Thompson',
-    role: 'Homeowner',
-    location: 'Bedford, NS',
-    rating: 5,
-    content: 'Green Stone Atlantic transformed our sloped backyard into an incredible living space. The paver patio is flawless, and the team was professional from start to finish.',
+    id: 'p1',
+    title: 'Car Modification',
+    category: 'Modification',
+    beforeImage: '/images/modi1.jpg',
+    afterImage: '/images/modi2.webp',
+    description: 'Transforming normal cars into Beautiful modern modification',
   },
   {
-    id: '2',
-    name: 'James Wilson',
-    role: 'Property Manager',
-    location: 'Halifax, NS',
-    rating: 5,
-    content: 'The most reliable landscaping crew in Halifax. Their attention to detail on our lawn care and garden maintenance is second to none.',
-  },
-  {
-    id: '3',
-    name: 'Elena Rodriguez',
-    role: 'Homeowner',
-    location: 'Dartmouth, NS',
-    rating: 5,
-    content: 'I highly recommend their retaining wall services. They solved our erosion issues while making the yard look beautiful. Truly premium service.',
+    id: 'p2',
+    title: 'Car Detailing',
+    category: 'Modification',
+    beforeImage: '/images/before.jpg',
+    afterImage: '/images/after.webp',
+    description: 'Professional Car Detailing for a Spotless Finish',
   },
 ];
+
 
 export const PROJECTS: Project[] = [
   {

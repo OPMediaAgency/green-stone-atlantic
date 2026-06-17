@@ -16,7 +16,24 @@ export interface Service {
     answer: string;
   }[];
 }
-
+export interface Services {
+  id: string;
+  title: string;
+  slug: string;
+  description: string;
+  shortDescription: string;
+  image: string;
+  features: string[];
+  benefits: string[];
+  process: {
+    step: string;
+    description: string;
+  }[];
+  faqs: {
+    question: string;
+    answer: string;
+  }[];
+}
 export interface QuoteRequest {
   fullName: string;
   phone: string;
@@ -46,3 +63,12 @@ export interface Project {
   afterImage: string;
   description: string;
 }
+export interface Projectc {
+  id: string;
+  title: string;
+  category: string;
+  beforeImage: string;
+  afterImage: string;
+  description: string;
+}
+
