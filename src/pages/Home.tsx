@@ -10,8 +10,8 @@ import { Testimonials } from '../components/Testimonials';
 import { QuoteForm } from '../components/QuoteForm';
 import { SEO } from '../components/SEO';
 import { SERVICES, PROJECTS } from '../constants';
-
 const RevealHeader: React.FC<{ subtitle: string; title: string; light?: boolean }> = ({ subtitle, title, light }) => (
+  
   <div className="flex flex-col mb-20">
     <motion.span 
       initial={{ opacity: 0, x: -20 }}
@@ -42,6 +42,7 @@ export const Home: React.FC = () => {
         title="Halifax Premium Landscaping & Hardscaping"
         description="Green Stone Atlantic is Halifax's premier landscaping company. Specializing in paver patios, retaining walls, lawn mowing, and garden design in Nova Scotia."
       />
+   
       <Hero />
       <Stats />
       

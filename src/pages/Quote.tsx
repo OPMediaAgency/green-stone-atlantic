@@ -4,7 +4,8 @@ import { Phone, Mail, Clock, ShieldCheck, MapPin } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { QuoteForm } from '../components/QuoteForm';
 import { BUSINESS_INFO } from '../constants';
-
+import { Navbar } from '../components/Navbar';
+import { Link } from 'react-router-dom';
 export const Quote: React.FC = () => {
   return (
     <>
@@ -12,7 +13,7 @@ export const Quote: React.FC = () => {
         title="Get a Free Quote | Halifax Landscaping"
         description="Request a free landscaping or hardscaping estimate from Green Stone Atlantic. We provide expert advice and transparent pricing in Halifax, Nova Scotia."
       />
-      
+    
       <div className="pt-56 sm:pt-64 md:pt-72 lg:pt-80 pb-24 sm:pb-32 bg-brand-light">
         <div className="container mx-auto px-6">
           <div className="text-center max-w-3xl mx-auto mb-20">

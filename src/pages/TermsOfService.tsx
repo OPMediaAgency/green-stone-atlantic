@@ -2,9 +2,11 @@ import React from 'react';
 import { Helmet } from 'react-helmet-async';
 import { motion } from 'motion/react';
 import { BUSINESS_INFO } from '../constants';
-
+import { Navbar } from '../components/NavbarP';
+import { Link } from 'react-router-dom';
 export const TermsOfService: React.FC = () => {
-  return (
+  return (<>
+  
     <div className="pt-44 pb-40 md:pb-24 bg-brand-light min-h-screen">
       <Helmet>
         <title>Terms of Service | Green Stone Atlantic</title>
@@ -81,6 +83,6 @@ export const TermsOfService: React.FC = () => {
           </div>
         </motion.div>
       </div>
-    </div>
+    </div></>
   );
 };

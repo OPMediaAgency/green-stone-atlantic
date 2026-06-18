@@ -1,4 +1,4 @@
-import { Service, Services, Testimonial, Project, Projectc } from './types';
+import { Service, Services, Testimonial, TestimonialP, Project, Projectc } from './types';
 
 export const BUSINESS_INFO = {
   name: 'Green Stone Atlantic',
@@ -410,38 +410,64 @@ export const SERVICES: Service[] = [
 ];
 
 export const TESTIMONIALS: Testimonial[] = [
+  {
+    id: '1',
+    name: 'Sarah Thompson',
+    role: 'Homeowner',
+    location: 'Bedford, NS',
+    rating: 5,
+    content: 'Green Stone Atlantic transformed our sloped backyard into an incredible living space. The paver patio is flawless, and the team was professional from start to finish.',
+  },
+  {
+    id: '2',
+    name: 'James Wilson',
+    role: 'Property Manager',
+    location: 'Halifax, NS',
+    rating: 5,
+    content: 'The most reliable landscaping crew in Halifax. Their attention to detail on our lawn care and garden maintenance is second to none.',
+  },
+  {
+    id: '3',
+    name: 'Elena Rodriguez',
+    role: 'Homeowner',
+    location: 'Dartmouth, NS',
+    rating: 5,
+    content: 'I highly recommend their retaining wall services. They solved our erosion issues while making the yard look beautiful. Truly premium service.',
+  },
+];
+export const TESTIMONIALSP: TestimonialP[] = [
   
    {
       id: "test-1",
-      name: "Matthew Vance",
-      role: "Asset Collector",
+      name: "Aidan Macdonald",
+      role: "Homeowner",
       rating: 5,
-      content: "Greenstone Atlantic exceeded every high bar. They detailed my Ferrari 488 paint to a literal mirror glass finish, removing 100% of the minor transport swirls. The mobile unit arrived on-time, fully self-powered, clean, and extremely professional.",
-      location: "Ferrari 488 Spider",
+      content: "I 100% recommend Greenstone Landscaping! I had a great experience with Greenstone Landscaping from start to finish. The quality of the work really stands out. Our yard looks fantastic, and the attention to detail was impressive. They were respectful of our property, worked efficiently, and left everything clean and tidy when the job was all done.",
+      location: "Bedford, NS",
     },
     {
       id: "test-2",
-      name: "Elizabeth Sterling",
-      role: "Marketing Director",
+      name: "Mimi Frappier",
+      role: "Property Manager",
       rating: 5,
-      content: "The interior hot vapor steam treatment completely restored my white leather SUV seats after a severe dark coffee spill active stain. It feels, smells, and touches like a brand-new factory-assembled car. Truly marvelous mobile convenience.",
-       location: "Mercedes-Benz GLE 53 Coupe",
+      content: "My yard looks completely transformed, and the quality of their work really shows. They took the time to make sure everything was done right and left the space clean and tidy. I highly recommend Greenstone Landscaping to anyone looking for top-notch landscaping and friendly services. You won’t be disappointed!",
+       location: "Halifax, NS",
     },
     {
       id: "test-3",
-      name: "David Kincaid",
-      role: "Managing Partner",
+      name: "Benito Bonilla",
+      role: "Homeowner",
       rating: 5,
-      content: "Flawless corporate service. They detailed our executive fleet of four black SUVs right on-site at our corporate headquarters. Highly synchronized logistics, completely digital invoicing, and stellar finish on every single vehicle.",
-       location: "Fleet Executive Escalades",
+      content: "Green stone landscaping did an excellent job! The team was professional, efficient, and the results look amazing. I highly recommend them for any landscaping needs.",
+       location: "Dartmouth, NS",
     },
     {
       id: "test-4",
-      name: "William Harrison",
+      name: "Gus Gilhen",
       role: "Architectural Principal",
       rating: 5,
-      content: "Simply extraordinary. My vintage DB11 looks deeper and shinier than the raw showroom pickup day. The level of craft and care around delicate leather piping and aluminum vents is unmatched. Greenstone is now my permanent car detailer.",
-       location: "Aston Martin DB11",
+      content: "Greenstone Landscaping did an exceptional job on our yard. The team was professional, efficient, and delivered high-quality results. They brought our vision to life and exceeded our expectations. Highly recommend!",
+       location: "Halifax, NS",
     },
 ];
 export const PROJECTSC: Projectc[] = [

@@ -5,6 +5,7 @@ import { CheckCircle2, ShieldCheck, Clock, MapPin, Star, ChevronRight, Calculato
 import { SERVICES, SERVICESC, TESTIMONIALS } from '../constants';
 import { QuoteForm } from '../components/QuoteForm';
 import { SEO } from '../components/SEO';
+import { Navbar } from '../components/NavbarP';
 
 export const ServiceDetail: React.FC = () => {
   const { slug } = useParams<{ slug: string }>();

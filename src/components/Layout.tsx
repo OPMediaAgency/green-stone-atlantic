@@ -38,16 +38,16 @@ export const Layout: React.FC = () => {
 
   return (
     <div className="flex flex-col min-h-screen bg-brand-light font-sans selection:bg-brand-accent selection:text-white">
-      {/* Header Container */}
-      <header className="fixed top-0 w-full z-50">
-        {/* Top Promotional Bar */}
+      {/* Header Container */} 
+       <header className="fixed top-0 w-full z-50">
+        
         <div className="bg-brand-dark text-white/60 py-3 text-center border-b border-white/5">
           <p className="text-[10px] font-display font-bold uppercase tracking-[0.4em]">
             Spring 2026: <span className="text-brand-secondary">15% Discount</span> on Early Season Garden Cleanup • <Link to="/quote" className="text-white hover:text-brand-accent underline underline-offset-4 transition-colors">Claim Now</Link>
           </p>
         </div>
         <Navbar />
-      </header>
+      </header> 
 
       <main className="flex-grow">
         <Outlet />

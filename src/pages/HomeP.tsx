@@ -6,10 +6,12 @@ import { Hero } from '../components/HeroP';
 import { Stats } from '../components/Stats';
 import { ServiceCard } from '../components/ServiceCard';
 import { BeforeAfter } from '../components/BeforeAfter';
-import { Testimonials } from '../components/Testimonials';
+import { Testimonials } from '../components/TestimonialsP';
+import {Navbar} from '../components/NavbarP';
 import { QuoteForm } from '../components/QuoteForm';
 import { SEO } from '../components/SEO';
 import { SERVICES, PROJECTS } from '../constants';
+import Gallery from '../components/Gallery';
 
 const RevealHeader: React.FC<{ subtitle: string; title: string; light?: boolean }> = ({ subtitle, title, light }) => (
   <div className="flex flex-col mb-20">
@@ -39,9 +41,18 @@ export const HomeP: React.FC = () => {
   return (
     <div className="grain-overlay">
       <SEO 
-        title="Halifax Premium Landscaping & Hardscaping"
-        description="Green Stone Atlantic is Halifax's premier landscaping company. Specializing in paver patios, retaining walls, lawn mowing, and garden design in Nova Scotia."
+        title="Professional Landscaping & Lawn Care Services Across Halifax"
+        description="Looking for professional landscaping in Halifax? Green Stone Atlantic offers lawn mowing, garden cleanup, weed control, fertilization, and custom landscape solutions."
       />
+      <header className="fixed top-0 w-full z-50">
+        
+        <div className="bg-brand-dark text-white/60 py-3 text-center border-b border-white/5">
+          <p className="text-[10px] font-display font-bold uppercase tracking-[0.4em]">
+            Spring 2026: <span className="text-brand-secondary">15% Discount</span> on Early Season Garden Cleanup • <Link to="/quote" className="text-white hover:text-brand-accent underline underline-offset-4 transition-colors">Claim Now</Link>
+          </p>
+        </div>
+        <Navbar />
+      </header>
       <Hero />
       <Stats />
       
@@ -74,7 +85,7 @@ export const HomeP: React.FC = () => {
                 className="aspect-[4/5] rounded-[60px] overflow-hidden"
               >
                 <img 
-                  src="/images/retaining_wall_modern_1778526590652.png" 
+                  src="/images/img1.jpg" 
                   alt="Landscaping Excellence" 
                   className="w-full h-full object-cover transition-transform duration-[3s] hover:scale-110"
                   referrerPolicy="no-referrer"
@@ -156,12 +167,12 @@ export const HomeP: React.FC = () => {
               className="bg-brand-dark p-12 rounded-[50px] text-white flex flex-col justify-between"
             >
               <div>
-                <span className="text-brand-secondary font-display font-medium tracking-[0.4em] uppercase text-[10px] mb-6 block">Limited Time Offer</span>
-                <h3 className="heading-editorial text-4xl mb-6">Spring Cleanup <br /> <span className="text-brand-accent">15% Off</span></h3>
-                <p className="text-white/40 font-sans max-w-sm mb-10">Prepare your property for the Nova Scotia summer. Book any full garden cleanup before June 1st and save instantly.</p>
+                <span className="text-brand-secondary font-display font-medium tracking-[0.4em] uppercase text-[10px] mb-6 block">LIMITED TIME OFFER</span>
+                <h3 className="heading-editorial text-4xl mb-6">SAVE 15% <br /> <span className="text-brand-accent">ON CLEANUPS</span></h3>
+                <p className="text-white/40 font-sans max-w-sm mb-10">Refresh your property before summer arrives.</p>
               </div>
               <Link to="/quote" className="inline-flex items-center gap-4 text-brand-secondary font-display font-bold uppercase tracking-widest text-xs group">
-                Claim Discount <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+                BOOK SERVICE <ArrowRight className="group-hover:translate-x-2 transition-transform" />
               </Link>
             </motion.div>
 
@@ -172,12 +183,12 @@ export const HomeP: React.FC = () => {
               className="bg-brand-light p-12 rounded-[50px] border border-brand-secondary/10 flex flex-col justify-between"
             >
               <div>
-                <span className="text-brand-accent font-display font-medium tracking-[0.4em] uppercase text-[10px] mb-6 block">Flexible Payments</span>
-                <h3 className="heading-editorial text-4xl text-brand-dark mb-6">Major Projects <br /> <span className="italic">Financed</span></h3>
-                <p className="text-gray-500 font-sans max-w-sm mb-10">Don't wait for your dream patio. We offer flexible payment plans for projects over $5,000. Build now, pay later.</p>
+                <span className="text-brand-accent font-display font-medium tracking-[0.4em] uppercase text-[10px] mb-6 block">NO OBLIGATION</span>
+                <h3 className="heading-editorial text-4xl text-brand-dark mb-6">FREE <br /> <span className="italic">Estimate</span></h3>
+                <p className="text-gray-500 font-sans max-w-sm mb-10">Get expert advice and pricing for your landscaping project.</p>
               </div>
               <Link to="/quote" className="inline-flex items-center gap-4 text-brand-dark font-display font-bold uppercase tracking-widest text-xs group">
-                Check Eligibility <ArrowRight className="group-hover:translate-x-2 transition-transform" />
+                REQUEST QUOTE <ArrowRight className="group-hover:translate-x-2 transition-transform" />
               </Link>
             </motion.div>
           </div>
@@ -187,7 +198,7 @@ export const HomeP: React.FC = () => {
       <section id="reviews">
         <Testimonials />
       </section>
-
+        <Gallery/>
       {/* Modern Quote Section */}
       <section className="py-32 bg-white" id="quote">
         <div className="container mx-auto px-6">

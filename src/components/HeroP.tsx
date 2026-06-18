@@ -2,7 +2,7 @@ import React from 'react';
 import { motion } from 'motion/react';
 import { ArrowRight, Star } from 'lucide-react';
 import { Link } from 'react-router-dom';
-
+ 
 export const Hero: React.FC = () => {
   return (
     <section className="relative min-h-screen flex items-center overflow-hidden grainy-bg pb-24 md:pb-32 lg:pb-36">
@@ -59,7 +59,7 @@ export const Hero: React.FC = () => {
                 </div>
               </div>
               
-              <div className="hidden md:flex flex-col  items-start lg:items-end">
+              <div className="hidden md:flex flex-col lg:-mb-20 items-start lg:items-end">
                 <div className="glass-dark p-8 rounded-[40px] border border-white/10 max-w-xs animate-float">
                   <div className="flex gap-1 text-brand-accent justify-between text-sm items-center mb-4">
                     <div className="flex gap-1 text-brand-accent justify-between text-sm items-center">{[...Array(5)].map((_, i) => (

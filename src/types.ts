@@ -54,7 +54,14 @@ export interface Testimonial {
   rating: number;
   location: string;
 }
-
+export interface TestimonialP {
+  id: string;
+  name: string;
+  role: string;
+  content: string;
+  rating: number;
+  location: string;
+}
 export interface Project {
   id: string;
   title: string;
