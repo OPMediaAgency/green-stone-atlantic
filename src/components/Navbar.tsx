@@ -19,7 +19,7 @@ export const Navbar: React.FC = () => {
 
   const navLinks = [
     { name: 'Services', path: '/#services' },
-    { name: 'Car Wash', path: '/carwash' },
+    
     { name: 'Projects', path: '/#projects' },
     { name: 'Reviews', path: '/#reviews' },
     { name: 'Contact', path: '/quote' },
