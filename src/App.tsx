@@ -13,6 +13,7 @@ import { Quote } from './pages/Quote';
 import { PrivacyPolicy } from './pages/PrivacyPolicy';
 import { TermsOfService } from './pages/TermsOfService';
 import { CarWash } from './pages/CarWash';
+import { HomeP } from './pages/HomeP';
 import { Car } from 'lucide-react';
 
 export default function App() {
@@ -26,7 +27,8 @@ export default function App() {
             <Route path="quote" element={<Quote />} />
             <Route path="privacy" element={<PrivacyPolicy />} />
             <Route path="terms" element={<TermsOfService />} />
-            <Route path="carwash" element={<CarWash />} />
+            {/* <Route path="carwash" element={<CarWash />} /> */}
+<Route path="home-page" element={<HomeP />} />
           </Route>
         </Routes>
       </BrowserRouter>
