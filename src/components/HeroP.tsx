@@ -39,7 +39,7 @@ export const Hero: React.FC = () => {
             
             <h1 className="text-4xl sm:text-6xl md:text-[8vw] text-inline lg:text-[5vw] font-display font-black text-white leading-tight sm:leading-[0.85] tracking-[-0.05em] uppercase mb-12">
               <span>Professional Landscaping</span>
-              <span className=" stroke-white stroke-2" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.5)' }}> & Lawn Care</span> <br />
+              <span className=" stroke-white stroke-2" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.5)' }}> & Lawn Care </span> <br className='md:block hidden'/>
               <span className="text-brand-accent">Services Across Halifax</span>
             </h1>
 

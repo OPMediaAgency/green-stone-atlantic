@@ -12,7 +12,7 @@ import { QuoteForm } from '../components/QuoteForm';
 import { SEO } from '../components/SEO';
 import { SERVICES, PROJECTS } from '../constants';
 import Gallery from '../components/Gallery';
-
+import Faq from '../components/Faq';
 const RevealHeader: React.FC<{ subtitle: string; title: string; light?: boolean }> = ({ subtitle, title, light }) => (
   <div className="flex flex-col mb-20">
     <motion.span 
@@ -217,7 +217,7 @@ export const HomeP: React.FC = () => {
           </div>
         </div>
       </section>
-
+<Faq/>
       {/* Ultra Modern Footer Map Integration */}
       <section className="h-[600px] w-full bg-brand-dark relative overflow-hidden">
         <div className="absolute inset-0 opacity-40 grayscale invert brightness-50">

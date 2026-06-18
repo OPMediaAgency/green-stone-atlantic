@@ -58,7 +58,7 @@ export default function Gallery() {
           <p className="text-sm uppercase tracking-wide text-slate-500">
             Gallery
           </p>
-          <h2 className="mt-2 text-3xl font-semibold text-slate-900 sm:text-4xl">
+          <h2 className="mt-2 md:text-5xl font-extrabold text-slate-900 text-4xl">
             Discover our Atlantic-inspired collection
           </h2>
           <p className="mx-auto mt-4 max-w-2xl text-base leading-7 text-slate-600">
