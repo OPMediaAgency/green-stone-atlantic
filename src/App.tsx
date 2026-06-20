@@ -28,7 +28,7 @@ export default function App() {
             <Route path="privacy" element={<PrivacyPolicy />} />
             <Route path="terms" element={<TermsOfService />} />
             {/* <Route path="carwash" element={<CarWash />} /> */}
-<Route path="home-page" element={<HomeP />} />
+<Route path="landscaping-lawn-care-halifax" element={<HomeP />} />
           </Route>
         </Routes>
       </BrowserRouter>
