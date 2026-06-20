@@ -40,7 +40,7 @@ export const Hero: React.FC = () => {
             <h1 className="text-4xl sm:text-6xl md:text-[8vw] text-inline lg:text-[5vw] font-display font-black text-white leading-tight sm:leading-[0.85] tracking-[-0.05em] uppercase mb-12">
               <span>Professional Landscaping</span>
               <span className=" stroke-white stroke-2" style={{ WebkitTextStroke: '1px rgba(255,255,255,0.5)' }}> & Lawn Care </span> <br className='md:block hidden'/>
-              <span className="text-brand-accent">Services Across Halifax</span>
+              <span className="text-[#68931a]">Services Across Halifax</span>
             </h1>
 
             <div className="grid md:grid-cols-2 gap-12 items-end">
@@ -60,8 +60,10 @@ export const Hero: React.FC = () => {
               </div>
               
               <div className="hidden md:flex flex-col lg:-mb-20 items-start lg:items-end">
-                <div className="glass-dark p-8 rounded-[40px] border border-white/10 max-w-xs animate-float">
+                <div className="glass-dark p-8 rounded-[40px] border border-white/10 max-w-xs animate-float"> 
+                <span className="text-white/40 text-xs uppercase tracking-widest font-bold ">Google</span>
                   <div className="flex gap-1 text-brand-accent justify-between text-sm items-center mb-4">
+                   
                     <div className="flex gap-1 text-brand-accent justify-between text-sm items-center">{[...Array(5)].map((_, i) => (
                       <Star key={i} size={14} className="fill-brand-gold text-brand-gold" />
                     ))} <span className="text-brand-accent">5/5 </span></div>

@@ -13,6 +13,7 @@ import { SEO } from '../components/SEO';
 import { SERVICES, PROJECTS } from '../constants';
 import Gallery from '../components/Gallery';
 import Faq from '../components/Faq';
+import { Helmet } from 'react-helmet-async';
 const RevealHeader: React.FC<{ subtitle: string; title: string; light?: boolean }> = ({ subtitle, title, light }) => (
   <div className="flex flex-col mb-20">
     <motion.span 
@@ -38,8 +39,21 @@ const RevealHeader: React.FC<{ subtitle: string; title: string; light?: boolean 
 );
 
 export const HomeP: React.FC = () => {
+  const localBusinessSchema = {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Green Stone Atlantic",
+    "telephone": "+1-902-266-9731",
+    "email": "greenstonens1@gmail.com",
+    "areaServed": "Halifax Regional Municipality"
+  };
   return (
     <div className="grain-overlay">
+        <Helmet>
+        <script type="application/ld+json">
+          {JSON.stringify(localBusinessSchema)}
+        </script>
+      </Helmet>
       <SEO 
         title="Professional Landscaping & Lawn Care Services Across Halifax"
         description="Looking for professional landscaping in Halifax? Green Stone Atlantic offers lawn mowing, garden cleanup, weed control, fertilization, and custom landscape solutions."
@@ -86,7 +100,7 @@ export const HomeP: React.FC = () => {
               >
                 <img 
                   src="/images/img1.jpg" 
-                  alt="Landscaping Excellence" 
+                  alt="Excellence Landscaping in Halifax" 
                   className="w-full h-full object-cover transition-transform duration-[3s] hover:scale-110"
                   referrerPolicy="no-referrer"
                 />
@@ -168,7 +182,7 @@ export const HomeP: React.FC = () => {
             >
               <div>
                 <span className="text-brand-secondary font-display font-medium tracking-[0.4em] uppercase text-[10px] mb-6 block">LIMITED TIME OFFER</span>
-                <h3 className="heading-editorial text-4xl mb-6">SAVE 15% <br /> <span className="text-brand-accent">ON CLEANUPS</span></h3>
+                <h2 className="heading-editorial text-4xl mb-6">SAVE 15% <br /> <span className="text-brand-accent">ON CLEANUPS</span></h2>
                 <p className="text-white/40 font-sans max-w-sm mb-10">Refresh your property before summer arrives.</p>
               </div>
               <Link to="/quote" className="inline-flex items-center gap-4 text-brand-secondary font-display font-bold uppercase tracking-widest text-xs group">
