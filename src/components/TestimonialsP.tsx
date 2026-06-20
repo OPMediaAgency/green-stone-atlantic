@@ -10,26 +10,26 @@ export const Testimonials: React.FC = () => {
   const prev = () => setCurrent((prev) => (prev - 1 + TESTIMONIALSP.length) % TESTIMONIALSP.length);
 
   return (
-    <section className="py-24 bg-brand-dark overflow-hidden relative" id="reviews">
+    <section className="py-16 sm:py-20 md:py-24 bg-brand-dark overflow-hidden relative" id="reviews">
       {/* Background decoration */}
       <div className="absolute top-0 left-0 w-full h-full opacity-5 pointer-events-none">
-        <Quote className="absolute top-20 left-20 w-80 h-80 rotate-12" />
+        <Quote className="absolute top-10 left-4 w-32 h-32 rotate-12 sm:top-20 sm:left-20 sm:w-52 sm:h-52 md:w-80 md:h-80" />
       </div>
 
-      <div className="container mx-auto px-6 relative z-10">
-        <div className="flex flex-col items-center mb-16 text-center">
-          <span className="text-brand-secondary font-display font-bold tracking-widest uppercase mb-4">
+      <div className="container mx-auto px-4 sm:px-6 relative z-10">
+        <div className="flex flex-col items-center mb-10 text-center sm:mb-16">
+          <span className="text-brand-secondary font-display font-bold tracking-widest uppercase mb-4 text-xs sm:text-sm">
             Voice of the Locals
           </span>
-          <h2 className="text-4xl md:text-5xl font-display font-bold text-white mb-6">
+          <h2 className="text-3xl sm:text-4xl md:text-5xl font-display font-bold text-white mb-4 sm:mb-6 max-w-2xl">
             Trusted by Hundreds in Halifax
           </h2>
-          <div className="flex items-center gap-2">
+          <div className="flex flex-col items-center gap-2 sm:flex-row">
             {[...Array(5)].map((_, i) => (
-              <Star key={i} size={20} className="fill-brand-secondary text-brand-secondary" />
+              <Star key={i} size={18} className="fill-brand-secondary text-brand-secondary sm:w-5 sm:h-5" />
             ))}
             <a href="https://share.google/1ahe7AObUpfS2n1qB" target="_blank" rel="reviews details link">
-              <span className="text-white/80 font-sans ml-2 underline">(5/5 based on 35+ reviews)</span>
+              <span className="text-white/80 font-sans ml-0 text-sm underline sm:ml-2 sm:text-base">(5/5 based on 35+ reviews)</span>
             </a>
           </div>
         </div>
@@ -41,15 +41,15 @@ export const Testimonials: React.FC = () => {
               initial={{ opacity: 0, x: 50 }}
               animate={{ opacity: 1, x: 0 }}
               exit={{ opacity: 0, x: -50 }}
-              className="glass p-12 md:p-16 rounded-[40px] border border-white/10"
+              className="glass p-8 sm:p-10 md:p-16 rounded-[28px] sm:rounded-[36px] md:rounded-[40px] border border-white/10"
             >
               <div className="flex flex-col items-center text-center">
-                <p className="text-xl md:text-2xl text-white italic font-sans mb-10 leading-relaxed">
+                <p className="text-base sm:text-lg md:text-2xl text-white italic font-sans mb-6 sm:mb-8 md:mb-10 leading-relaxed">
                   "{TESTIMONIALSP[current].content}"
                 </p>
                 <div>
-                  <h4 className="text-white font-display font-bold text-xl">{TESTIMONIALSP[current].name}</h4>
-                  <p className="text-brand-secondary uppercase tracking-widest text-xs font-semibold">
+                  <h4 className="text-white font-display font-bold text-lg sm:text-xl">{TESTIMONIALSP[current].name}</h4>
+                  <p className="text-brand-secondary uppercase tracking-widest text-[10px] sm:text-xs font-semibold">
                     {TESTIMONIALSP[current].location}
                   </p>
                 </div>
@@ -57,18 +57,18 @@ export const Testimonials: React.FC = () => {
             </motion.div>
           </div>
 
-          <div className="flex justify-center gap-6 mt-12">
+          <div className="flex justify-center gap-4 sm:gap-6 mt-8 sm:mt-12">
             <button
               onClick={prev}
-              className="w-14 h-14 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
+              className="w-12 h-12 sm:w-14 sm:h-14 rounded-full border border-white/20 flex items-center justify-center text-white hover:bg-white/10 transition-colors"
             >
-              <ChevronLeft />
+              <ChevronLeft className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
             <button
               onClick={next}
-              className="w-14 h-14 rounded-full bg-brand-accent flex items-center justify-center text-white hover:bg-brand-secondary transition-colors"
+              className="w-12 h-12 sm:w-14 sm:h-14 rounded-full bg-brand-accent flex items-center justify-center text-white hover:bg-brand-secondary transition-colors"
             >
-              <ChevronRight />
+              <ChevronRight className="w-4 h-4 sm:w-5 sm:h-5" />
             </button>
           </div>
         </div>
