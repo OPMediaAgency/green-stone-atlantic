@@ -29,7 +29,7 @@ export const Testimonials: React.FC = () => {
               <Star key={i} size={20} className="fill-brand-secondary text-brand-secondary" />
             ))}
             <a href="https://share.google/1ahe7AObUpfS2n1qB" target="_blank" rel="reviews details link">
-              <span className="text-white/80 font-sans ml-2">(5/5 based on 35+ reviews)</span>
+              <span className="text-white/80 font-sans ml-2 underline">(5/5 based on 35+ reviews)</span>
             </a>
           </div>
         </div>
