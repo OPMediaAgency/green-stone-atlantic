@@ -62,7 +62,7 @@ export const HomeP: React.FC = () => {
         
         <div className="bg-brand-dark text-white/60 py-3 text-center border-b border-white/5">
           <p className="text-[10px] font-display font-bold uppercase tracking-[0.4em]">
-            Spring 2026: <span className="text-brand-secondary">15% Discount</span> on Early Season Garden Cleanup • <Link to="/quote" className="text-white hover:text-brand-accent underline underline-offset-4 transition-colors">Claim Now</Link>
+            Spring 2026: <span className="text-brand-secondary">20% Discount</span> on Early Season Garden Cleanup • <Link to="/quote" className="text-white hover:text-brand-accent underline underline-offset-4 transition-colors">Claim Now</Link>
           </p>
         </div>
         <Navbar />
