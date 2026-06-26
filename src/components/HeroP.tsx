@@ -56,6 +56,14 @@ export const Hero: React.FC = () => {
                     <span>Request Visit</span>
                     <ArrowRight size={16} className="group-hover:translate-x-2 transition-transform duration-300" />
                   </Link>
+
+                 {/* New Phone Button */}
+  <a
+    href="tel:19022669731"
+    className="bg-white border-2 border-brand-accent text-brand-accent hover:bg-brand-accent hover:text-white px-8 py-4 rounded-full font-display font-black uppercase tracking-widest text-xs transition-all duration-500 flex items-center justify-center gap-3"
+  >
+    <span>Call Us</span>
+  </a>
                 </div>
               </div>
               
