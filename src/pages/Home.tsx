@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
 import { ShieldCheck, MapPin, Clock, ArrowRight } from 'lucide-react';
@@ -36,6 +36,21 @@ const RevealHeader: React.FC<{ subtitle: string; title: string; light?: boolean 
 );
 
 export const Home: React.FC = () => {
+
+  // --- ADD THIS BLOCK ---
+  useEffect(() => {
+    const script = document.createElement('script');
+    script.src = "https://app.trysoro.com/api/embed/09c2d746-73e9-4f1b-86fb-7f5e8fc76e68";
+    script.async = true;
+    document.body.appendChild(script);
+
+    return () => {
+      document.body.removeChild(script);
+    };
+  }, []);
+  // ----------------------
+
+  
   return (
     <div className="grain-overlay">
       <SEO 
@@ -186,8 +201,12 @@ export const Home: React.FC = () => {
       </section>
 
 
-<div id="soro-blog"></div>
-<script src="https://app.trysoro.com/api/embed/09c2d746-73e9-4f1b-86fb-7f5e8fc76e68" defer></script>
+{/* Soro Blog Section */}
+<section className="py-24 bg-white" id="blog">
+  <div className="container mx-auto px-6">
+    <div id="soro-blog"></div>
+  </div>
+</section>
       
       
       <section id="reviews">
