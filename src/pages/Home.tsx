@@ -185,6 +185,11 @@ export const Home: React.FC = () => {
         </div>
       </section>
 
+
+<div id="soro-blog"></div>
+<script src="https://app.trysoro.com/api/embed/09c2d746-73e9-4f1b-86fb-7f5e8fc76e68" defer></script>
+      
+      
       <section id="reviews">
         <Testimonials />
       </section>
