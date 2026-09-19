@@ -3,6 +3,7 @@ import { motion } from 'motion/react';
 import { Phone, Mail, Clock, ShieldCheck, MapPin } from 'lucide-react';
 import { SEO } from '../components/SEO';
 import { QuoteForm } from '../components/QuoteForm';
+import { VisualiserPromo } from '../components/VisualiserPromo';
 import { BUSINESS_INFO } from '../constants';
 import { Navbar } from '../components/Navbar';
 import { Link } from 'react-router-dom';
@@ -106,6 +107,9 @@ export const Quote: React.FC = () => {
           </div>
         </div>
       </div>
+
+      {/* Design Visualiser Promo */}
+      <VisualiserPromo />
     </>
   );
 };

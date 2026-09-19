@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { motion } from 'motion/react';
-import { ShieldCheck, MapPin, Clock, ArrowRight } from 'lucide-react';
+import { ShieldCheck, MapPin, Clock, ArrowRight, Sparkles } from 'lucide-react';
 import { Hero } from '../components/Hero';
 import { Stats } from '../components/Stats';
 import { ServiceCard } from '../components/ServiceCard';
@@ -9,6 +9,7 @@ import { BeforeAfter } from '../components/BeforeAfter';
 import { Testimonials } from '../components/Testimonials';
 import { QuoteForm } from '../components/QuoteForm';
 import { SEO } from '../components/SEO';
+import { VisualiserPromo } from '../components/VisualiserPromo';
 import { SERVICES, PROJECTS } from '../constants';
 const RevealHeader: React.FC<{ subtitle: string; title: string; light?: boolean }> = ({ subtitle, title, light }) => (
   
@@ -160,6 +161,9 @@ export const Home: React.FC = () => {
       <section id="projects">
         <BeforeAfter projects={PROJECTS} />
       </section>
+
+      {/* Design Visualiser Promo */}
+      <VisualiserPromo />
 
       {/* Financing & Promo Section */}
       <section className="py-24 bg-white">
